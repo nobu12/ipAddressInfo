@@ -71,7 +71,7 @@ public class Main {
 	 * @return 10進数を２進数に変換した値
 	 */
 	private static String getBinaryAddress(String decimalAddress) {
-		return Integer.toBinaryString(Integer.valueOf(decimalAddress));
+		return String.format("%8s", Integer.toBinaryString(Integer.valueOf(decimalAddress))).replace(" ", "0");
 	}
 
 	/**
